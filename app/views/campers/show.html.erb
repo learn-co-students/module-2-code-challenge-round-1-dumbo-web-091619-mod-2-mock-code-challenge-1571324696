@@ -1,0 +1,14 @@
+<h1>About This Camper:</h1>
+<label> Name: </label>
+<%= @camper.name %>
+<br><br>
+<label> Age: </label>
+<%= @camper.age %>
+<br><br>
+<label> Activities: </label>
+<ul>
+<% @camper.activities.each do |activity| %>
+    <li><%=link_to activity.name, activity_path(activity) %>, which is difficulty level: <%= activity.difficulty %></li>
+    <br>
+<% end %>
+</ul>
