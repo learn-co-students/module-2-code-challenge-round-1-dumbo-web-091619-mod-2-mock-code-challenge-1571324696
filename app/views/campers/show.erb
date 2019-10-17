@@ -1,0 +1,8 @@
+<%= flash[:notice] %>
+
+<%= @camper.name %>
+<%= @camper.age %>
+<% @activities.each do |activity| %>
+  <%= activity.name %>
+  <%= activity.difficulty %>
+<% end %>
