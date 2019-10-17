@@ -1,0 +1,10 @@
+<p>Name: <%= @camper.name %></p>
+<p>Age: <%= @camper.age %></p>
+
+<b>Here is your activities:</b>
+<% @camper.signups.each do |a|%>
+  <p>Activity: <%= a.activity.name %></p>
+  <p>Time: <%= a.time %></p>
+<% end%>
+<p><%= link_to "SignUp for an activity", new_signup_path%></p>
+<p><%= link_to "Back to campers list", campers_path%></p>

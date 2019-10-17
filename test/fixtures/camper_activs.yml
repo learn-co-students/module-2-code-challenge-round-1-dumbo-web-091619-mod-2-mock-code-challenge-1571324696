@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  camper: one
+  activitie: one
+  singup: 1
+
+two:
+  name: MyString
+  camper: two
+  activitie: two
+  singup: 1

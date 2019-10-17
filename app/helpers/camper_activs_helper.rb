@@ -1,0 +1,2 @@
+module CamperActivsHelper
+end
